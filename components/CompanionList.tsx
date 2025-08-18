@@ -1,7 +1,6 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -17,11 +16,7 @@ interface companionsListProps {
   classNames: string;
 }
 
-const CompanionList = ({
-  title,
-  companions,
-  classNames,
-}: companionsListProps) => {
+const CompanionList = ({ companions, classNames }: companionsListProps) => {
   return (
     <article className={cn("companion-list", classNames)}>
       <h2 className="font-bold text-3xl">Recent Sessions</h2>
