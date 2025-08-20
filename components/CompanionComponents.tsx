@@ -2,7 +2,7 @@
 
 import { cn, configureAssistant, getSubjectColor } from "@/lib/utils";
 import { vapi } from "@/lib/vapi.sdk";
-import Lottie from "lottie-react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import soundwaves from "@/constants/soundwaves.json";
@@ -15,7 +15,6 @@ enum CallStatus {
 }
 
 const CompanionComponents = ({
-  companionId,
   subject,
   topic,
   name,
@@ -45,8 +44,7 @@ const CompanionComponents = ({
     const onCallStart = () => setCallStatus(CallStatus.ACTIVE);
 
     const onCallEnd = () => {
-      setCallStatus(CallStatus.FINISHED)
-      
+      setCallStatus(CallStatus.FINISHED);
     };
 
     const onMessage = (message: Message) => {
