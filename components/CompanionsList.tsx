@@ -16,7 +16,11 @@ interface companionsListProps {
   classNames: string;
 }
 
-const CompanionsList = ({ title, companions, classNames }: companionsListProps) => {
+const CompanionsList = ({
+  title,
+  companions,
+  classNames,
+}: companionsListProps) => {
   return (
     <article className={cn("companion-list", classNames)}>
       <h2 className="font-bold text-3xl">{title}</h2>
