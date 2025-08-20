@@ -20,7 +20,7 @@ export default withSentryConfig(nextConfig, {
 
   org: "dami-t2",
 
-  project: "javascript-nextjs-sm",
+  project: "converso-43",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,

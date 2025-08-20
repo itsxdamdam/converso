@@ -5,7 +5,7 @@
 import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  dsn: "https://0fe957c94a0009e84f92d15754f0a895@o4509089356185600.ingest.us.sentry.io/4509876150009856",
+  dsn: "https://c85522da6a9bf4721ec52febb15b41c8@o4509089356185600.ingest.us.sentry.io/4509877955985408",
 
   // Add optional integrations for additional features
   integrations: [
@@ -24,9 +24,9 @@ Sentry.init({
 
   // Define how likely Replay events are sampled when an error occurs.
   replaysOnErrorSampleRate: 1.0,
+
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,
- 
 });
 
 export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
