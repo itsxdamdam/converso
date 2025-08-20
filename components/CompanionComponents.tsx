@@ -35,7 +35,7 @@ const CompanionComponents = ({
       if (isSpeaking) {
         lottieRef.current?.play();
       } else {
-        lottieRef.current.stop();
+        lottieRef.current?.stop();
       }
     }
   });
