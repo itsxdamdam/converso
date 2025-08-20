@@ -1,7 +1,6 @@
 import CompanionCard from "@/components/CompanionCard";
-import CompanionList from "@/components/CompanionList";
+import CompanionsList from "@/components/CompanionsList";
 import CTA from "@/components/CTA";
-import { recentSessions } from "@/constants";
 import {
   getAllCompanions,
   getRecentSessions,
@@ -25,7 +24,7 @@ const Page = async () => {
         ))}
       </section>
       <section className="home-section">
-        <CompanionList
+        <CompanionsList
           title="Recently completed sessions"
           companions={recentSessionsCompanions}
           classNames="w-3/3 max-lg:w-full"
